@@ -1,0 +1,99 @@
+/* RESET */
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* UTILITY CLASSES */
+.container {
+  margin: 0 auto;
+}
+
+
+
+/* APP */
+
+#app {
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  overflow: hidden;
+}
+
+/* IMAGE WRAPPER */
+.img-wrapper {
+  display: flex;
+  height: 70vh;
+  gap: 20px;
+  width: 80vw;
+}
+
+/* BOX IMG */
+.img-box {
+  border-radius: 40px;
+  background-repeat: no-repeat;
+  background-size: cover;
+  height: 100%;
+  flex: 0.5 1 0;
+  position: relative;
+  transition: flex 0.7s ease-in;
+  cursor: pointer;
+  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
+}
+
+.img-title {
+  opacity: 0;
+  position: absolute;
+  bottom: 20px;
+  left: 20px;
+  font-size: 24px;
+  font-weight: bold;
+  text-transform: capitalize;
+  color: white;
+  backdrop-filter: blur(15px);
+  padding: 10px;
+  border-radius: 10px;
+  transition: opacity 0.2s ease-in 0.4s;
+}
+
+
+#explore {
+  background-image: url(../img/img-1.jpg);
+}
+
+#forest {
+  background-image: url(../img/img-4.jpg);
+}
+
+#beach {
+  background-image: url(../img/img-2.jpg);
+}
+
+#city {
+  background-image: url(../img/img-3.jpg);
+}
+
+#mountains {
+  background-image: url(../img/img-5.jpg);
+}
+
+
+/* EXPANDING CLASS */
+
+.expand {
+  flex-grow: 4;
+}
+
+.expand .img-title {
+  opacity: 1;
+}
+
+
+/* debug */
+
+/* .debug #app .img-box {
+  border: 2px solid black;
+} */
