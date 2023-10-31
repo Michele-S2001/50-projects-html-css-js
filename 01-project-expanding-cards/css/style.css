@@ -6,12 +6,14 @@
   box-sizing: border-box;
 }
 
+body {
+  background-color: #09093b;
+}
+
 /* UTILITY CLASSES */
 .container {
   margin: 0 auto;
 }
-
-
 
 /* APP */
 
@@ -39,9 +41,8 @@
   height: 100%;
   flex: 0.5 1 0;
   position: relative;
-  transition: flex 0.7s ease-in;
+  transition: flex 0.7s ease-in-out;
   cursor: pointer;
-  box-shadow: 5px 5px 5px 0px #000000, inset 4px 4px 15px 0px #000000, 5px 5px 15px 5px rgba(0,0,0,0);
 }
 
 .img-title {
