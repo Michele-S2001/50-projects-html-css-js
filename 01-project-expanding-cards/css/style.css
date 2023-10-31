@@ -57,7 +57,7 @@ body {
   backdrop-filter: blur(15px);
   padding: 10px;
   border-radius: 10px;
-  transition: opacity 0.2s ease-in 0.4s;
+  transition: opacity 0.2s ease-in 0.2s;
 }
 
 
